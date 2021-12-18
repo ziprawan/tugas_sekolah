@@ -1,4 +1,8 @@
 /* Tugas Kelompok TIK
+ * SMAN 1 Bekasi
+ * 
+ * Thanks to our teacher
+ * Bu Deswati
  * 
  * Kelompok:
  * Aziz Ridhwan Pratama
