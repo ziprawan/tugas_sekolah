@@ -18,7 +18,7 @@ begin
   WriteLn('Class   : X MIPA 3            ');
   WriteLn('Number  : 02                  ');
   WriteLn('==============================');
-  WriteLn(ScreenHeight);
+  WriteLn();
   { End of intro }
   
   { Enter main of program }
@@ -33,7 +33,8 @@ begin
   end
   else if (total_name <= 0) then
   begin
-    GotoXY(1, 7); Write; WriteLn('Number zero or lower isn' + #39 + 't allowed!');
+    GotoXY(1, 7); WriteLn(DupeString(#32, ScreenWidth)); 
+    GotoXY(1, 7); WriteLn('Number zero or lower isn' + #39 + 't allowed!');
     Exit;
   end
   else
