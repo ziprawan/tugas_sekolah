@@ -59,13 +59,12 @@ begin
   { Clean up dialog }
   For i:= 7 to 11 do
   begin
-    GotoXY(1, i); WriteLn;
+    GotoXY(1, i); WriteLn(DupeString(#32, ScreenWidth));
   end;
   
   { Randomize from list_names }
   Randomize();
   selected_int := Random(total_name);
-  WriteLn(selected_int);
   
   { Sleep }
   GotoXY(1, 7); WriteLn('Name has been chosen!');
@@ -77,7 +76,7 @@ begin
     GotoXY(1, 10); WriteLn(j);
     Sleep(1000);
   end;
-  
+
   { Output the name }
   GotoXY(1, 7); WriteLn('Congratulations to the chosen name!');
   WriteLn();
