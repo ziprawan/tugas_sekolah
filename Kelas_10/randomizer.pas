@@ -52,7 +52,7 @@ begin
     GotoXY(1, 9); WriteLn('##############################');
     GotoXY(1, 10); WriteLn(DupeString(#32, ScreenHeight));
     GotoXY(1, 10); Write('Input name ' + IntToStr(i) + ' : ');
-    GotoXY(Length(IntToStr(i)) + 15, 10); ReadLn(list_names[i]);  { i decreased 1 to avoid EAccessViolation and default array index is started from 0! }
+    GotoXY(Length(IntToStr(i)) + 15, 10); ReadLn(list_names[i]);
   end;
   WriteLn();
   
@@ -64,8 +64,7 @@ begin
   
   { Randomize from list_names }
   Randomize();
-  selected_int := Random(total_name);
-  WriteLn(selected_int);
+  selected_int := Random(total_name) + 1;
   
   { Sleep }
   GotoXY(1, 7); WriteLn('Name has been chosen!');
