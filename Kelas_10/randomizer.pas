@@ -111,9 +111,10 @@ begin
   selected_int := Random(total_name);
   
   { Sleep }
-  GotoXY(1, 7); WriteLn('Name has been chosen!');
+  GotoXY(1, 7); WriteLn('Name sudah terpilih!');
   Sleep(1000);
-  GotoXY(1, 8); WriteLn('Are you ready?');
+  GotoXY(1, 8); WriteLn('Siap?');
+  Sleep(1000);
   
   For j := 3 downto 1 do
   begin
@@ -125,7 +126,7 @@ begin
   ClearRows(7, 11);
 
   { Output the name }
-  GotoXY(1, 7); WriteLn('Congratulations to the chosen name!');
+  GotoXY(1, 7); WriteLn('Selamat kepada nama yang terpilih!');
   WriteLn();
   GotoXY(1, 9); WriteLn('===================================');
   GotoXY(1, 10); WriteLn(list_names[selected_int]);
