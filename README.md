@@ -6,4 +6,4 @@ Simple kode untuk hand sanitizer dibuat dengan arduino
 ### randomizer.pas
 Simple kode untuk mengrandom semua nama yang diinput
 
-Note: Compile di HP mungkin bermasalah
+*Note*: Compile di HP mungkin bermasalah
